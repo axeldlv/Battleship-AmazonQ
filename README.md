@@ -2,6 +2,8 @@
 
 A browser-based implementation of the classic Battleship game, where you play against an AI opponent.
 
+Check technical blog here : [From Prompt to Play: Battleship Game Tutorial Using Amazon Q, React, and TypeScript](https://dev.to/aws-builders/from-prompt-to-play-battleship-game-tutorial-using-amazon-q-react-and-typescript-2jch)
+
 ## Features
 
 - Classic 10x10 Battleship grid
