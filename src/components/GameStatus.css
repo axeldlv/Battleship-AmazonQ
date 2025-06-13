@@ -1,0 +1,17 @@
+.game-status {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #e6f2ff;
+  color: #003366;
+  text-align: center;
+  margin: 15px 0;
+  min-height: 20px;
+  transition: all 0.3s;
+}
+
+.game-status.game-over {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+}

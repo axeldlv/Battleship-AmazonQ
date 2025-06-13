@@ -1,0 +1,68 @@
+.destroyed-ship-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1000;
+  animation: slide-in 0.5s ease-out, fade-out 0.5s ease-in 2.5s forwards;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.destroyed-ship-notification.player {
+  border-left: 5px solid #d32f2f;
+}
+
+.destroyed-ship-notification.enemy {
+  border-left: 5px solid #4caf50;
+}
+
+.notification-icon {
+  font-size: 24px;
+  animation: explosion 0.5s ease-out;
+}
+
+.notification-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-50%, -100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes explosion {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

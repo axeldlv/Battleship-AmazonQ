@@ -1,0 +1,86 @@
+.ship-placement {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ship-placement h3 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.orientation-toggle {
+  margin-bottom: 15px;
+}
+
+.orientation-button {
+  padding: 8px 16px;
+  background-color: #e6f2ff;
+  border: 2px solid #003366;
+  border-radius: 4px;
+  color: #003366;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.orientation-button:hover {
+  background-color: #cce6ff;
+}
+
+.orientation-button.active {
+  background-color: #003366;
+  color: white;
+}
+
+.ships-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.ship-item {
+  padding: 10px;
+  background-color: #e6f2ff;
+  border: 2px solid #003366;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ship-item:hover:not(.placed) {
+  background-color: #cce6ff;
+}
+
+.ship-item.selected {
+  background-color: #003366;
+  color: white;
+}
+
+.ship-item.placed {
+  background-color: #cccccc;
+  border-color: #999999;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.ship-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ship-size {
+  display: flex;
+}
+
+.ship-unit {
+  width: 15px;
+  height: 15px;
+  background-color: currentColor;
+  margin: 0 2px;
+}

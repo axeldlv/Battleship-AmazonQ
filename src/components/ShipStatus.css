@@ -1,0 +1,87 @@
+.ship-status {
+  margin: 15px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.ship-status h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ship-status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ship-status-item {
+  background-color: #e6f2ff;
+  border: 1px solid #003366;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.ship-status-item.sunk {
+  background-color: #ffebee;
+  border-color: #d32f2f;
+}
+
+.ship-status-name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #003366;
+}
+
+.ship-status-item.sunk .ship-status-name {
+  color: #d32f2f;
+}
+
+.ship-size {
+  font-weight: normal;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.ship-status-bar {
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.ship-status-health {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.ship-status-item.sunk .ship-status-health {
+  background-color: #d32f2f;
+  width: 0 !important;
+}
+
+.ship-status-text {
+  font-size: 0.8em;
+  text-align: right;
+  color: #666;
+}
+
+.ship-status-item.sunk .ship-status-text {
+  color: #d32f2f;
+  font-weight: bold;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

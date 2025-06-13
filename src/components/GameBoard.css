@@ -1,0 +1,128 @@
+.game-board {
+  position: relative;
+  margin: 10px;
+}
+
+.board-grid {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #003366;
+  border-radius: 4px;
+  background-color: #e6f2ff;
+}
+
+.board-labels {
+  display: flex;
+}
+
+.board-column-labels {
+  margin-left: 30px;
+}
+
+.board-label {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #003366;
+}
+
+.board-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-row {
+  display: flex;
+  height: 40px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #003366;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.cell-empty {
+  background-color: #e6f2ff;
+}
+
+.cell-ship {
+  background-color: #003366;
+}
+
+.cell-hit {
+  background-color: #ff6666;
+  position: relative;
+}
+
+.cell-hit::before,
+.cell-hit::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background-color: #cc0000;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.cell-hit::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.cell-hit::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.cell-miss {
+  background-color: #99ccff;
+  position: relative;
+}
+
+.cell-miss::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: #003366;
+  top: 20%;
+  left: 20%;
+}
+
+.cell-hover {
+  background-color: rgba(0, 51, 102, 0.3);
+}
+
+.hover-ship {
+  position: absolute;
+  top: 40px; /* Adjust for the column labels */
+  left: 30px; /* Adjust for the row labels */
+  pointer-events: none;
+}
+
+.hover-cell {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.hover-cell-valid {
+  background-color: rgba(0, 204, 102, 0.5);
+  border: 2px solid #00cc66;
+}
+
+.hover-cell-invalid {
+  background-color: rgba(255, 102, 102, 0.5);
+  border: 2px solid #ff6666;
+}

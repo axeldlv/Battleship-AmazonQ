@@ -1,0 +1,60 @@
+# See https://github.com/github/gitignore/blob/main/Node.gitignore
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# CRA cache and testing
+.cache/
+coverage/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# React Scripts temporary files
+*.tgz
+.pnp.*
+.pnp/
+
+# TypeScript
+*.tsbuildinfo
+
+# Mac system files
+*.DS_Store
+
+# Optional: OS & editor settings
+.idea/
+*.sw?
+*.swo
+*.bak
+*.tmp
+
+# Optional: If using GitHub Codespaces or remote containers
+.devcontainer/
+
+# Optional: If using eslint cache
+.eslintcache
+
+# Optional: If using stylelint cache
+.stylelintcache
+
+# Optional: Storybook
+storybook-static/
+

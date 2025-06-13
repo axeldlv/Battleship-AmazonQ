@@ -1,0 +1,165 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ship-placement-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.orientation-toggle {
+  margin-bottom: 10px;
+}
+
+.ships-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.ship-item {
+  padding: 8px 12px;
+  background-color: #e6f2ff;
+  border: 2px solid #003366;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ship-item.selected {
+  background-color: #003366;
+  color: white;
+}
+
+.ship-item.placed {
+  background-color: #cccccc;
+  border-color: #999999;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.start-button, .reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 5px;
+}
+
+.start-button:hover, .reset-button:hover {
+  background-color: #004c99;
+}
+
+.start-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.game-status {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  min-height: 30px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.modal-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #004c99;
+}
