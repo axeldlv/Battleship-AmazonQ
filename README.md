@@ -81,6 +81,20 @@ npm start
 - A ship is sunk when all its cells are hit
 - The game ends when all ships of one player are sunk
 
+## Screenshots
+
+- Ship placement screen with click-to-place
+  
+![image](https://github.com/user-attachments/assets/e4cfd3e7-14f4-4754-b7e5-ec9c4cc39d19)
+
+- Real-time feedback on hits and misses and "You sunk my Battleship!" messages.
+  
+![image](https://github.com/user-attachments/assets/1e10c215-62ae-4571-90f6-2459fe356ea5)
+
+- End-of-game modal with reset option.
+  
+![image](https://github.com/user-attachments/assets/29f9f651-4dcc-40f5-8032-0f6b1941d2dc)
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
